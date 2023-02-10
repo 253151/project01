@@ -17,7 +17,7 @@ from suggestions import run_suggestions
 from chatbot_a.chatbot import chatrun
 from update import update_data
 
-selected3 = option_menu(None, ["🏠Home", "🔎전월세 검색",  "📊전세 예측", "🐱‍💻챗봇", '💬건의사항'], 
+selected3 = option_menu(None, ["🏠Home", "🔎전월세 검색",  "📊전세 예측", "🤖챗봇", '💬건의사항'], 
     # icons=['house', 'cloud-upload', "list-task", 'gear'], 
     menu_icon="cast", default_index=0, orientation="horizontal",
     styles={
