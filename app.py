@@ -17,13 +17,13 @@ from suggestions import run_suggestions
 from chatbot_a.chatbot import chatrun
 from update import update_data
 
-selected3 = option_menu(None, ["🏠Home", "🔎전월세 검색",  "📊전세 예측", "🤖챗봇", '💬건의사항'], 
+selected3 = option_menu(None, ["🏠Home", "🔎전월세 검색",  "📊전세 예측", "🐱‍💻챗봇", '💬건의사항'], 
     # icons=['house', 'cloud-upload', "list-task", 'gear'], 
     menu_icon="cast", default_index=0, orientation="horizontal",
     styles={
         "container": {"padding": "0!important", "background-color": "#fafafa"},
-        "icon": {"color": "gray", "font-size": "15px"}, 
-        "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+        "icon": {"color": "gray", "font-size": "12.5px"}, 
+        "nav-link": {"font-size": "12.5px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
         "nav-link-selected": {"background-color": "#47C83E"},
     }
 )
@@ -85,5 +85,6 @@ elif selected3 == "🤖챗봇":
 # 건의사항 탭
 elif selected3 == "💬건의사항":
     run_suggestions()
+
 else:
     selected3 == "🏠Home"
