@@ -1,6 +1,6 @@
 # *PROJECT1 : 내 방, 어디?*
 
- - 사용언어 : Python 3.11.1
+ - 사용언어 : Python 3.9.13
  - 사용툴 : VS Code 1.74.1
  - 주요 라이브러리 : streamlit 1.17.0, pandas 1.5.2, numpy 1.24.0, plotly 5.13.0
  - 프로젝트 개요
