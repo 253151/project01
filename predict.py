@@ -25,7 +25,7 @@ def run_predict():
     df_copy = df.copy()
     # data = pd.read_csv('data/bds_data.csv', encoding='cp949')
     data = df
-    st.write(df)
+    # st.write(df)
     
     sub_menu = ['전월세 월평균 그래프', '전월세 실거래수 지역 순위', '날짜별 거래', '전세 예측', '전월세 전환율/대출이자 계산기']
     sub_choice = st.sidebar.selectbox("메뉴", sub_menu)

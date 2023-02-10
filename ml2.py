@@ -87,7 +87,7 @@ def prediction2():
                             )
             ax.legend()
             ax.grid(True, which='major', c='gray', ls='-', lw=1, alpha=0.2)
-            ax.set_title('Prophet 모델')
+            ax.set_title('Prophet Graph')
             st.pyplot(fig)
    
 
@@ -175,5 +175,5 @@ def prediction2():
             ax.plot(results['RENT_GTN'], label='past')
             ax.plot(results['Forecast'],label='prediction')
             ax.legend()
-            plt.title('LSTM 모델')
+            plt.title('LSTM Graph')
             st.pyplot(fig)
