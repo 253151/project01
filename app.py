@@ -1,5 +1,8 @@
 # 홈
 
+# [openai_credentials]
+#  api_secret = "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"
+
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd
