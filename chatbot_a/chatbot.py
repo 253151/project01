@@ -6,7 +6,7 @@ import requests
 openai.api_key = st.secrets['openai_credentials'].api_secret
 
 
-# Creating a function which will generate the calls from the api
+# Creating a function which will generate the calls from the api.
 def chatrun():
     def generate_response(prompt):
         if '부동산' in user_input:
