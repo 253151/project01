@@ -27,19 +27,19 @@
 ## 소스코드
 - (함수Docstring링크) [githublink첨부예정]
 - 자세한 설명은 각각의 파일 주석 참고
-- **Index**
-    1. app.py: 홈
-    2. mean_db.py
-    3. batchFile.bat: API 접속 및 업데이트
-    4. ml2.py
-    5. predict.py: 전세예측
-    6. requirements.txt: 사용 라이브러리
-    7. search.py: 전월세검색
-    8. sql.py: db생성
-    9. submit.bat: 업데이트 데이터와 github 동기화
-    10. suggestions.py: 건의사항
-    11. update.py: run_update 함수
-    12. z.py: run_update 실행
+    - **Index**
+        1. app.py: 홈
+        2. mean_db.py
+        3. batchFile.bat: API 접속 및 업데이트
+        4. ml2.py
+        5. predict.py: 전세예측
+        6. requirements.txt: 사용 라이브러리
+        7. search.py: 전월세검색
+        8. sql.py: db생성
+        9. submit.bat: 업데이트 데이터와 github 동기화
+        10. suggestions.py: 건의사항
+        11. update.py: run_update 함수
+        12. z.py: run_update 실행
         - chatbot_a: 챗봇 관련 모음
         - data: 데이터 모음
 
