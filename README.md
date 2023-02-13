@@ -40,8 +40,8 @@
         10. suggestions.py: 건의사항
         11. update.py: run_update 함수
         12. z.py: run_update 실행
-        - chatbot_a는 챗봇 관련 모음
-        - data는 데이터 모음
+        - chatbot_a: 챗봇 관련 모음
+        - data: 데이터 모음
 
 
 
