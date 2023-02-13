@@ -1,8 +1,8 @@
 # *📕 PROJECT01. 내 방, 어디?*
 
  - **사용언어** : Python 3.9.13
- - **사용툴** : VS Code 1.74.1
- - **주요 라이브러리** : streamlit 1.17.0, pandas 1.5.2, numpy 1.24.0, plotly 5.13.0
+ - **사용툴** : VS Code 1.74.1, Google Colab
+ - **사용 라이브러리** : streamlit 1.17.0, pandas 1.5.2, numpy 1.24.0, plotly 5.13.0
  - **프로젝트 내용**
     - 서울공공API를 이용하여 매일 업데이트 되는 전월세 실거래 현황 데이터
     - 그래프를 통한 전월세 실거래가 월별/날짜별 정보 제공, 전월세 시세 정보 제공
@@ -15,6 +15,9 @@
     - 개발(4명)
     - 데이터(3명)
  - **기간** : 2023.01.30 ~ 02.10 (약 2주)
+
+ - (데이터) [https://data.seoul.go.kr/dataList/OA-21276/S/1/datasetView.do]
+ - (배포링크) [https://whereismyroom.streamlit.app/]
 
 
 ## 소스코드
