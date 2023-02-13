@@ -16,8 +16,8 @@
     - 데이터(3명)
  - **기간** : 2023.01.30 ~ 02.10 (약 2주)
 
- - [서울시 전월세가 데이터](https://data.seoul.go.kr/dataList/OA-21276/S/1/datasetView.do)
- - [배포링크] (https://whereismyroom.streamlit.app/)
+ - 데이터 : [서울시 전월세가 데이터](https://data.seoul.go.kr/dataList/OA-21276/S/1/datasetView.do)
+ - 내방어디 : [배포링크](https://whereismyroom.streamlit.app/)
 
 
 ## 소스코드
