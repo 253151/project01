@@ -53,19 +53,19 @@ if selected3 == "🏠Home":
     st.write("기간 : " + f'{before_month}' + " ~ " +f'{before_day}' + " (계약일 기준)")
     data = data[data['CNTRCT_DE']>=f'{before_month}']
     
-    data['FLR_NO'] = data['FLR_NO'].astype(str) + '층'
-    cols = ['BOBN', 'BUBN']
-    data['번지'] = data[cols].apply(lambda row: '-'.join(row.values.astype(str))
-                                            if row['BUBN'] != 0
+    data['FLR_NO'] = data['FLR_NO'].astype(str) + '층' # FLR_NO 값에 "층"을 더해줌
+    cols = ['BOBN', 'BUBN'] # 본번과 부번을 합침
+    data['번지'] = data[cols].apply(lambda row: '-'.join(row.values.astype(str)) # 본번과 부번을 합친 cols 사이에 "-" 를 더해줌 (본번-부번)
+                                            if row['BUBN'] != 0 # 부번이 0과 같을 경우
                                             else row['BOBN'], axis=1)
-    data['BLDG_NM'] = data['BLDG_NM'].str.replace('아파트', '')
-    data['BLDG_NM'] = data['BLDG_NM'].str.replace('오피스텔', '')                             
-    cols1 = ['SGG_NM', 'BJDONG_NM', '번지', 'BLDG_NM', 'HOUSE_GBN_NM', 'FLR_NO']
-    data['주소'] = data[cols1].apply(lambda row:' '.join(row.values.astype(str)),axis=1)
-    data = data.drop(['SGG_CD', 'BJDONG_CD', 'SGG_NM', 'BJDONG_NM', 'BOBN', 'BUBN', 'FLR_NO', 'BLDG_NM', '번지', 'HOUSE_GBN_NM'], axis=1)
-    data['RENT_AREA'] = data['RENT_AREA'].apply(lambda x: math.trunc(x / 3.3058))
-    data.columns = ['계약일', '전월세 구분', '임대면적(평)', '보증금(만원)', '임대료(만원)', '건축년도', '주소']
-    data = data[['계약일', '주소', '보증금(만원)', '임대료(만원)', '임대면적(평)', '건축년도', '전월세 구분']]
+    data['BLDG_NM'] = data['BLDG_NM'].str.replace('아파트', '') # '아파트'를 ''로 대체함
+    data['BLDG_NM'] = data['BLDG_NM'].str.replace('오피스텔', '')           
+    cols1 = ['SGG_NM', 'BJDONG_NM', '번지', 'BLDG_NM', 'HOUSE_GBN_NM', 'FLR_NO'] # 전체 주소 변환 결과를 더함
+    data['주소'] = data[cols1].apply(lambda row:' '.join(row.values.astype(str)),axis=1) # 주소란의 최종 출력값!!
+    data = data.drop(['SGG_CD', 'BJDONG_CD', 'SGG_NM', 'BJDONG_NM', 'BOBN', 'BUBN', 'FLR_NO', 'BLDG_NM', '번지', 'HOUSE_GBN_NM'], axis=1) # 원본데이터를 Drop
+    data['RENT_AREA'] = data['RENT_AREA'].apply(lambda x: math.trunc(x / 3.3058)) # 임대면적을 m² → 평 단위로 변환
+    data.columns = ['계약일', '전월세 구분', '임대면적(평)', '보증금(만원)', '임대료(만원)', '건축년도', '주소'] # data 컬럼명
+    data = data[['계약일', '주소', '보증금(만원)', '임대료(만원)', '임대면적(평)', '건축년도', '전월세 구분']] # 출력순서
     data = data.reset_index(drop=True)
     data.index = data.index+1
     st.write(data)
