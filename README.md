@@ -2,8 +2,11 @@
 
  - **사용언어** : Python 3.9.13
  - **사용툴** : VS Code 1.74.1, Google Colab
- - **사용 라이브러리** : numpy 1.24.0, pandas 1.5.3, matplotlib 3.6.3, streamlit 1.18.0, plotly 5.13.0, tensorflow == 2.9.0, streamlit_option_menu 0.3.2, geopandas == 0.12.2, joblib 1.2.0, 
-scikit-learn 1.2.1, pandas-gbq 0.17.9, pydeck 0.8.0, prophet 1.1.2, seaborn 0.12.2, openai 0.26.5, streamlit_chat 0.0.2.1, requests 2.28.2
+ - **사용 라이브러리** : 
+ > numpy 1.24.0, pandas 1.5.3, matplotlib 3.6.3, streamlit 1.18.0, plotly 5.13.0, 
+ > tensorflow == 2.9.0, streamlit_option_menu 0.3.2, geopandas == 0.12.2, joblib 1.2.0, 
+ > scikit-learn 1.2.1, pandas-gbq 0.17.9, pydeck 0.8.0, prophet 1.1.2, seaborn 0.12.2, 
+ > openai 0.26.5, streamlit_chat 0.0.2.1, requests 2.28.2
  - **프로젝트 내용**
     - 서울공공API를 이용하여 매일 업데이트 되는 전월세 실거래 현황 데이터
     - 그래프를 통한 전월세 실거래가 월별/날짜별 정보 제공, 전월세 시세 정보 제공
