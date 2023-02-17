@@ -5,6 +5,7 @@ import time
 import pandas as pd
 from PIL import Image
 
+
 conn = sqlite3.connect('data/suggestion.db', check_same_thread=False)
 cur = conn.cursor()
 
@@ -69,6 +70,13 @@ def delete_sugg(author, pword, title):
 # -------------------------------------------------------------------------------------------------
 
 def run_suggestions():
+
+    """
+    건의사항 탭의 함수입니다
+    :parameter:
+    :return:
+    """
+
     st.subheader('건의사항')
 
     # 문의사항 입력

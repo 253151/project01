@@ -11,11 +11,11 @@ from dateutil.relativedelta import relativedelta
 
 st.title('내 방 어디?')
 
-from 00_home.title import run_home
-from 01_search.search import run_search
-from 02_prediction.predict import run_predict
-from 03_chatbot.chatbot.chatbot import chatrun
-from 04_suggestion.suggestions import run_suggestions
+from m0_home.title import run_home
+from m1_search.search import run_search
+from m2_prediction.predict import run_predict
+from m3_chatbot.chatbot.chatbot import chatrun
+from m4_suggestion.suggestions import run_suggestions
 from update import update_data
 
 

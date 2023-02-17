@@ -8,6 +8,11 @@ openai.api_key = st.secrets['openai_credentials'].api_secret
 
 # Creating a function which will generate the calls from the api.
 def chatrun():
+    """
+    챗봇 탭의 함수입니다
+    :parameter:
+    :return:
+    """
     def generate_response(prompt):
         if '부동산' in user_input:
             matching_dict = {'광진구' : '11215', '서초구' : '11650', '마포구' : '11440', '중랑구' : '11260', '구로구' : '11530',
