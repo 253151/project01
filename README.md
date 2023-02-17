@@ -26,19 +26,21 @@
 
 ## 소스코드
 - 자세한 설명은 각각의 파일 주석 참고
-- **Index**
-1. [00_home](https://github.com/253151/project01/tree/main/00_home): 홈 탭 
-2. 01_search: 전월세 검색
-3. 02_prediction: 전세예측
-4. 03_chatbot: 챗봇
-5. 04_suggestion: 건의사항
-6. data: 데이터 모음
-7. app.py: 메뉴 바 및 실행 함수
-8. git.bat: github 업로드 배치 파일
-9. requirements.txt: 사용 라이브러리
-10. sql.py: db생성
-11. batchFile.bat: API 접속 및 업데이트
-12. update.py: run_update 함수
+### 목차
+- 폴더
+    1. [00_home](https://github.com/253151/project01/tree/main/00_home): 홈 탭 
+    2. [01_search](https://github.com/253151/project01/tree/main/01_search): 전월세 검색
+    3. [02_prediction](https://github.com/253151/project01/tree/main/02_prediction): 전세예측
+    4. [03_chatbot](https://github.com/253151/project01/tree/main/03_chatbot): 챗봇
+    5. [04_suggestion](https://github.com/253151/project01/tree/main/04_suggestion): 건의사항
+    6. [data](https://github.com/253151/project01/tree/main/data): 데이터 모음 폴더
+- 파일
+    1. [app.py](https://github.com/253151/project01/blob/main/app.py): 메뉴 바 및 실행 함수
+    2. [git.bat](https://github.com/253151/project01/blob/main/git.bat): github 업로드 배치 파일
+    3. [requirements.txt](https://github.com/253151/project01/blob/main/requirements.txt): 사용 라이브러리
+    4. [sql.py](https://github.com/253151/project01/blob/main/sql.py): db생성
+    5. [update.py](https://github.com/253151/project01/blob/main/update.py): run_update 함수
+    6. [batchFile.bat](https://github.com/253151/project01/blob/main/update.py): API 접속 및 업데이트 배치파일
 
 
 ## Daily Update
