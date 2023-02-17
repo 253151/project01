@@ -27,19 +27,20 @@
 ## 소스코드
 - 자세한 설명은 각각의 파일 주석 참고
 - **Index**
-    >1. 00_home: 홈 탭 
-    >2. 01_search: 전월세 검색
-    >3. 02_prediction: 전세예측
-    >4. 03_chatbot: 챗봇
-    >5. 04_suggestion: 건의사항
-    >6. data: 데이터 모음
-    >7. app.py: 메뉴 바 및 실행 함수
-    >8. git.bat: github 업로드
-    >9. requirements.txt: 사용 라이브러리
-    >10. sql.py: db생성
-    >11. batchFile.bat: API 접속 및 업데이트
-    >12. update.py: run_update 함수
-    >13. z.py: run_update 실행
+    """
+    1. 00_home: 홈 탭 
+    2. 01_search: 전월세 검색
+    3. 02_prediction: 전세예측
+    4. 03_chatbot: 챗봇
+    5. 04_suggestion: 건의사항
+    6. data: 데이터 모음
+    7. app.py: 메뉴 바 및 실행 함수
+    8. git.bat: github 업로드
+    9. requirements.txt: 사용 라이브러리
+    10. sql.py: db생성
+    11. batchFile.bat: API 접속 및 업데이트
+    12. update.py: run_update 함수
+    """
         
 
 
