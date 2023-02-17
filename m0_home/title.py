@@ -8,10 +8,11 @@ import plotly.express as px
 import math
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
+from update import update_data
 
 
 
-def run_title(data):
+def run_title():
     """
     홈페이지입니다.
     SQLiteDB(mydata.db)에서 불러온 서울시 전월세가 실거래 데이터(budongsan2(update.py 참고))를 리턴하는 함수입니다
@@ -25,7 +26,8 @@ def run_title(data):
 
     # 실거래 현황
     st.subheader('최근 한달 실거래 현황 (최신순)')
-
+    data = update_data()
+    data2 = data.copy()
     if data is None:
         pass
     else:

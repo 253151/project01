@@ -24,7 +24,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import sqlite3
 
-from mean_db import ml_data
+from m2_prediction.mean_db import ml_data
 
 # 한글 변환
 mat.rcParams['font.family']='Gulim'
@@ -39,14 +39,6 @@ def prediction2():
     date = df_bds1['CNTRCT_DE'].max()
     
     
-    # PATH = 'data/'
-    # file_list = os.listdir(PATH + 'ml_data')
-    # list = []
-    # for i in file_list:
-    #     a = i.split('.')[0]
-    #     if a !='':
-    #         list.append(a)
-    # list
     s = st.selectbox('원하는 구를 선택하세요',(list))
     tab1, tab2 = st.tabs(['Tab 1', 'Tab 2'])
     with tab1:

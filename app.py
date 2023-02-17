@@ -11,10 +11,10 @@ from dateutil.relativedelta import relativedelta
 
 st.title('내 방 어디?')
 
-from m0_home.title import run_home
+from m0_home.title import run_title
 from m1_search.search import run_search
 from m2_prediction.predict import run_predict
-from m3_chatbot.chatbot.chatbot import chatrun
+from m3_chatbot.chatbot import chatrun
 from m4_suggestion.suggestions import run_suggestions
 from update import update_data
 
@@ -32,12 +32,12 @@ selected3 = option_menu(None, ["🏠Home", "🔎전월세 검색",  "📊전세 
 
 # 홈 탭
 if selected3 == "🏠Home":
-    run_title(data)
+    run_title()
 
     
 # 전월세 검색 탭
 elif selected3 == "🔎전월세 검색":
-    run_search(data)
+    run_search()
 
 # 전세 시세 예측 탭 
 elif selected3 == "📊전세 예측":

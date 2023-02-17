@@ -6,7 +6,7 @@ import numpy as np
 import math
 from update import update_data
 
-def run_search(data):
+def run_search():
     """
     전월세 검색 탭의 함수입니다.
 
@@ -22,6 +22,7 @@ def run_search(data):
     *👉 왼쪽 메뉴를 조건에 맞게 선택하신 후 조회버튼을 눌러주세요*
     # """)
     # 데이터 불러오기
+    data = update_data()
     latest = data.loc[1,['CNTRCT_DE']].values[0]
     st.write("기간 : 2022.01.01 ~ " +f'{latest}' + " (계약일 기준)")
     

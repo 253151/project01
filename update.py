@@ -10,6 +10,7 @@ import sqlite3
 import time
 from datetime import datetime
 
+
 # 최신 데이터 불러오는 함수(매일 갱신)
 def run_update():
     '''

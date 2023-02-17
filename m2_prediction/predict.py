@@ -10,11 +10,16 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 import warnings
 warnings.filterwarnings("ignore")
-from ml2 import prediction2
+from m2_prediction.ml2 import prediction2
 from update import update_data
-from mean_db import dong_j_d_mean, gu_j_d_mean, gu_j_m_mean, gu_w_d_mean, gu_w_m_mean
+from m2_prediction.mean_db import dong_j_d_mean, gu_j_d_mean, gu_j_m_mean, gu_w_d_mean, gu_w_m_mean
 
 def run_predict():
+    """
+    전세예측 탭의 함수입니다.
+    :parameter:
+    :return:
+    """
     st.markdown("""
     *👉 왼쪽 메뉴를 선택하세요*
     """)
@@ -194,7 +199,7 @@ def run_predict():
         nRe = float(nRe)
         # n4 = st.number_input("월세 (만원)", step=0.1, value=float(nRe))
         st.write('월세(만원)')
-        st.success('결과 ' + str(f'{nRe:.2f}') + '만원')
+        st.success('결과👉 ' + str(f'{nRe:.2f}') + '만원')
         p1 = st.empty()
         p2 = st.empty()
         p3 = st.empty()
@@ -220,7 +225,7 @@ def run_predict():
         uRe = float(uRe)
         # u4 = st.number_input("전세 보증금 (만원) ", step=0.1, value=float(uRe))
         st.write('전세 보증금 (만원)')
-        st.success('결과 ' + str(f'{uRe:.2f}') + '만원')
+        st.success('결과👉 ' + str(f'{uRe:.2f}') + '만원')
         p4 = st.empty()
         p5 = st.empty()
         p6 = st.empty()
@@ -269,7 +274,7 @@ def run_predict():
         if e == '원리금균등상환':
             # e5 = st.number_input('매월 상환금 (원금 + 이자) (원)', step=0.1, value=float(eRe1))
             st.write('매월 상환금 (원금 + 이자)')
-            st.success(str(f'{eRe1:.0f}') + '원')
+            st.success('결과👉 '+str(f'{eRe1:.0f}') + '원')
         else:
             ce1, ce2 = st.columns([1,1])
             pe1 = ce1.empty()
@@ -306,7 +311,7 @@ def run_predict():
         mRe = float(mRe)
         # m4 = st.number_input("전월세 전환율 (%)  ", step=0.1, value=float(mRe))
         st.write('전월세 전환율 (%)')
-        st.success(str(f'{mRe:.2f}') + '%')
+        st.success('결과👉 '+str(f'{mRe:.2f}') + '%')
         p11 = st.empty()
         p12 = st.empty()
         p13 = st.empty()
