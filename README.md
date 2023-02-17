@@ -59,6 +59,9 @@ streamlit run app.py
     2. [m0_home](https://github.com/253151/project01/tree/main/00_home): 홈 탭 
     3. [m1_search](https://github.com/253151/project01/tree/main/01_search): 전월세 검색
     4. [m2_prediction](https://github.com/253151/project01/tree/main/02_prediction): 전세예측
+        - mean_db.py: 구별 전월세 일, 월 평균 데이터를 구하는 함수
+        - ml2.py: 전세 실거래가 예측 함수 
+        - predict.py: 전세예측 main 파일
     5. [m3_chatbot](https://github.com/253151/project01/tree/main/03_chatbot): 챗봇
     6. [m4_suggestion](https://github.com/253151/project01/tree/main/04_suggestion): 건의사항
 
