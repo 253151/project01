@@ -28,7 +28,7 @@
 - 자세한 설명은 각각의 파일 주석 참고
 - **Index**
     ```Markdown
-    1. 00_home: 홈 탭 
+    1. [00_home](https://github.com/253151/project01/tree/main/00_home): 홈 탭 
     2. 01_search: 전월세 검색
     3. 02_prediction: 전세예측
     4. 03_chatbot: 챗봇
