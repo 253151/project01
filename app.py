@@ -32,12 +32,12 @@ selected3 = option_menu(None, ["🏠Home", "🔎전월세 검색",  "📊전세 
 
 # 홈 탭
 if selected3 == "🏠Home":
-    run_title()
+    run_title(data)
 
     
 # 전월세 검색 탭
 elif selected3 == "🔎전월세 검색":
-    run_search()
+    run_search(data)
 
 # 전세 시세 예측 탭 
 elif selected3 == "📊전세 예측":

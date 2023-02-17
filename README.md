@@ -12,7 +12,7 @@
     - 그래프를 통한 전월세 실거래가 월별/날짜별 정보 제공, 전월세 시세 정보 제공
     - 구별 부동산 전세 시세 예측
     - 전월세 전환율 및 전세 대출 이자 계산기
-    - 챗봇을 통한 구+ 날짜별 실거래가 검색
+    - 챗봇을 통한 구+날짜별 실거래가 검색
     - 건의사항
 
  - **프로젝트 인원** : 총7명
@@ -23,11 +23,38 @@
  - 데이터👉  [서울시 부동산 전월세가 정보](https://data.seoul.go.kr/dataList/OA-21276/S/1/datasetView.do)
  - 내방어디👉 [클릭](https://whereismyroom.streamlit.app/)
 
+## 데모 시연
+- 먼저 프로젝트 파일을 다운로드 받습니다. 
+
+```bash
+git clone https://github.com/253151/project01.git 
+```
+
+- 프로젝트 경로에서 가상환경 설치 후 접속합니다. (Windows 10 기준)
+```bash
+virtualenv venv
+source venv/Scripts/activate
+```
+
+- 라이브러리를 설치합니다. 
+```bash
+pip install -r requirements.txt
+```
+
+- streamlit 명령어를 실행합니다. 
+```bash
+streamlit run app.py
+```
+
+- 그 외의 추가적인 설정 방법은 다음 블로그 및 동영상을 참고하세요. 
+  + 블로그명 : 
+  + 동영상 : 
+
 
 ## 소스코드
 - 자세한 설명은 각각의 파일 주석 참고
 ### 목차
-- 폴더
+- 폴더(_클릭시 해당 링크로 넘어갑니다_)
     1. [00_home](https://github.com/253151/project01/tree/main/00_home): 홈 탭 
     2. [01_search](https://github.com/253151/project01/tree/main/01_search): 전월세 검색
     3. [02_prediction](https://github.com/253151/project01/tree/main/02_prediction): 전세예측

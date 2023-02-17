@@ -6,12 +6,13 @@ import numpy as np
 import math
 from update import update_data
 
-def run_search():
+def run_search(data):
     """
     전월세 검색 탭의 함수입니다.
+
     :parameter:
     :return: 조건에 맞는 검색결과를 리턴합니다.
-    
+
     """
 
 
@@ -20,11 +21,11 @@ def run_search():
     ### 전월세 검색결과:mag:
     *👉 왼쪽 메뉴를 조건에 맞게 선택하신 후 조회버튼을 눌러주세요*
     # """)
-    data = update_data()
+    # 데이터 불러오기
     latest = data.loc[1,['CNTRCT_DE']].values[0]
     st.write("기간 : 2022.01.01 ~ " +f'{latest}' + " (계약일 기준)")
     
-
+    # 데이터의 자치구명 유니크 값 가져오기
     gu = data['SGG_NM'].unique()
     
     # 해당 구 선택
@@ -175,6 +176,9 @@ def run_search():
             pass
         else:
             type_search = (data['RENT_GBN'] == type_select)
+
+        data['RENT_GTN'] = pd.to_numeric(data['RENT_GTN'])
+        data['RENT_FEE']= pd.to_numeric(data['RENT_FEE'])
         rent_gtn_search = (data['RENT_GTN'] >= rent_gtn_select[0]) & (data['RENT_GTN'] <= rent_gtn_select[1])
         rent_fee_search = (data['RENT_FEE'] >= rent_fee_select[0]) & (data['RENT_FEE'] <= rent_fee_select[1])
         # 면적 최솟값, 최댓값 평 -> 제곱미터 변환
