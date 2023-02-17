@@ -27,7 +27,6 @@
 ## 소스코드
 - 자세한 설명은 각각의 파일 주석 참고
 - **Index**
-    ```Markdown
     1. [00_home](https://github.com/253151/project01/tree/main/00_home): 홈 탭 
     2. 01_search: 전월세 검색
     3. 02_prediction: 전세예측
@@ -40,7 +39,6 @@
     10. sql.py: db생성
     11. batchFile.bat: API 접속 및 업데이트
     12. update.py: run_update 함수
-    ```
 
 
 ## Daily Update
