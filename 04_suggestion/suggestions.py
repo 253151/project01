@@ -13,19 +13,19 @@ def create_tb():
     cur.execute('CREATE TABLE IF NOT EXISTS suggestion(author CHAR, pword CHAR, email VARCHAR, title TEXT, comment TEXT, date TEXT, status TEXT)' )
     conn.commit()
 
-# db 입력
+# 게시글 db 입력
 def add_data(author, pword, email, title, comment, date, status):
     params = (author, pword, email, title, comment, str(date), status)
     cur.execute("INSERT INTO suggestion(author, pword, email, title, comment, date, status) VALUES (?,?,?,?,?,?,?)",params)
     conn.commit()
 
-# 목록 불러오기
+# 게시글 목록 불러오기
 def sugg_list():
     cur.execute('SELECT author, title, comment, date, status FROM suggestion ORDER BY date DESC')
     sugg = cur.fetchall()
     return sugg
 
-# 검색 (작성자명)
+# 검색(작성자명)
 def get_by_author(author):
 	cur.execute("SELECT author, title, date, comment, status FROM suggestion WHERE author like '%{}%'".format(author))
 	data = cur.fetchall()
@@ -41,17 +41,18 @@ def get_by_comment(comment):
 	data = cur.fetchall()
 	return data
 
-# 처리상태 수정
+# 관리자 - 처리상태 수정
 def admin_complete(author, title):
     cur.execute('UPDATE suggestion SET status = "처리완료" WHERE author="{}" AND title="{}"'.format(author, title))
     conn.commit()
 def admin_recover(author, title):
     cur.execute('UPDATE suggestion SET status = "접수" WHERE author="{}" AND title="{}"'.format(author, title))
     conn.commit()
+# 관리자 - 게시글 삭제
 def admin_delete(author, title):
     cur.execute('DELETE FROM suggestion WHERE author="{}" AND title="{}"'.format(author, title))
     conn.commit()
-     # conn.close()
+    # conn.close()
 
 
 # 게시글 수정/삭제
@@ -164,7 +165,7 @@ def run_suggestions():
                         2. ······.
                         3. ······.
                         ''')
-            st.image('https://images.mypetlife.co.kr/content/uploads/2018/12/09154907/cotton-tulear-2422612_1280.jpg', width = 600)
+            # st.image('https://images.mypetlife.co.kr/content/uploads/2018/12/09154907/cotton-tulear-2422612_1280.jpg', width = 600)
 
     with tab2:
         list = sugg_list()
