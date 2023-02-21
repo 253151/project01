@@ -216,7 +216,7 @@ def run_predict():
             u2 = st.number_input("월세 보증금 (만원) ", step=0.1)
         with p6.container():
             u3 = st.number_input("월세 (만원) ", step=0.1)
-
+00
         if u1 == 0:
             uRe = 0
         else:
