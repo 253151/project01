@@ -48,7 +48,7 @@ streamlit run app.py
 
 - 그 외의 추가적인 설정 방법은 다음 블로그 및 동영상을 참고하세요. 
   + 블로그명 : 
-  + 동영상 : 
+  + 동영상 : https://youtu.be/RbN39pUA1Ww
 
 
 ## 소스코드
