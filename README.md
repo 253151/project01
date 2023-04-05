@@ -2,6 +2,7 @@
 
  - **사용언어** : Python 3.9.13
  - **사용툴** : VS Code 1.74.1, Google Colab
+ - **데이터베이스** : SQLite
  - **사용 라이브러리** : 
  > _numpy_ 1.24.0, _pandas_ 1.5.3, _matplotlib_ 3.6.3, _streamlit_ 1.18.0, _plotly_ 5.13.0, 
  > *tensorflow* 2.9.0, *streamlit_option_menu* 0.3.2, _geopandas_ 0.12.2, _joblib_ 1.2.0, 
