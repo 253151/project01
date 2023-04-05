@@ -23,8 +23,9 @@
  - 내방어디👉 [클릭](https://whereismyroom.streamlit.app/)
 
  - 자세한 내용은 아래 링크를 참조해주세요
-    - PPT 👉 https://docs.google.com/presentation/d/1r8m3rYVjpJN5yrfuyxlpT1CN8TzDlai_/edit?usp=sharing&ouid=116804087841929016249&rtpof=true&sd=true
-    - 동영상 : https://youtu.be/RbN39pUA1Ww
+    - PPT : [클릭](https://docs.google.com/presentation/d/1r8m3rYVjpJN5yrfuyxlpT1CN8TzDlai_/edit?usp=sharing&ouid=116804087841929016249&rtpof=true&sd=true)
+    - 시연영상 : https://youtu.be/RbN39pUA1Ww
+    
 ## 데모 시연
 - 먼저 프로젝트 파일을 다운로드 받습니다. 
 
