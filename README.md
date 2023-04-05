@@ -23,7 +23,7 @@
  - 내방어디👉 [클릭](https://whereismyroom.streamlit.app/)
 
  - 자세한 내용은 아래 링크를 참조해주세요
-    - PPT : [구글 드라이브 링크 이동](https://drive.google.com/file/d/15ciaGD5oJnnCVCYpRenE_-BtkYW9Vktp/view?usp=share_link)
+    - PDF : [구글 드라이브 링크 이동](https://drive.google.com/file/d/15ciaGD5oJnnCVCYpRenE_-BtkYW9Vktp/view?usp=share_link)
     - 시연영상 : https://youtu.be/RbN39pUA1Ww
 
 ## 데모 시연
