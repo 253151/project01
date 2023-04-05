@@ -22,6 +22,9 @@
  - 데이터👉  [서울시 부동산 전월세가 정보](https://data.seoul.go.kr/dataList/OA-21276/S/1/datasetView.do)
  - 내방어디👉 [클릭](https://whereismyroom.streamlit.app/)
 
+ - 자세한 내용은 아래 링크를 참조해주세요
+    - PPT 👉 https://docs.google.com/presentation/d/1r8m3rYVjpJN5yrfuyxlpT1CN8TzDlai_/edit?usp=sharing&ouid=116804087841929016249&rtpof=true&sd=true
+    - 동영상 : https://youtu.be/RbN39pUA1Ww
 ## 데모 시연
 - 먼저 프로젝트 파일을 다운로드 받습니다. 
 
@@ -44,10 +47,6 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-
-- 그 외의 추가적인 설정 방법은 다음 블로그 및 동영상을 참고하세요. 
-  + 블로그명 : 
-  + 동영상 : https://youtu.be/RbN39pUA1Ww
 
 
 ## 소스코드
