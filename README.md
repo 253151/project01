@@ -24,7 +24,7 @@
 
  - 자세한 내용은 아래 링크를 참조해주세요
     - PDF : [구글 드라이브 링크 이동](https://drive.google.com/file/d/15ciaGD5oJnnCVCYpRenE_-BtkYW9Vktp/view?usp=share_link)
-    - 시연영상 : https://youtu.be/RbN39pUA1Ww
+    - 시연영상 : https://youtu.be/j3rdthS7PM8
 
 ## 데모 시연
 - 먼저 프로젝트 파일을 다운로드 받습니다. 
