@@ -1,5 +1,5 @@
 # *📕 PROJECT01. 내 방, 어디?*
- [내방어디 메뉴바](./%EB%82%B4%EB%B0%A9%EC%96%B4%EB%94%94%20%EC%BA%A1%EC%B3%90.png)
+ ![내방어디 메뉴바](./%EB%82%B4%EB%B0%A9%EC%96%B4%EB%94%94%20%EC%BA%A1%EC%B3%90.png)
  - **사용언어** : Python 3.9.13
  - **사용툴** : VS Code 1.74.1, Google Colab
  - **데이터베이스** : SQLite
