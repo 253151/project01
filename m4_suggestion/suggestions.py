@@ -115,7 +115,7 @@ def run_suggestions():
                 # email = st.text_input("이메일")
                 title = st.text_input("제목", max_chars = 50)
                 comment = st.text_area("내용 ")
-                cols = st.columns((1,1,1,1,1,1,1,1,1))
+                cols = st.columns((1,1,1,1,1,1,1,1))
                 if cols[0].form_submit_button("수정"):
                     if pword == "ok_myroomadmin" :
                         admin_complete(author, title)
