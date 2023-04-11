@@ -1,5 +1,5 @@
 # *📕 PROJECT01. 내 방, 어디?*
-
+ ![내방어디 메뉴바](./%EB%82%B4%EB%B0%A9%EC%96%B4%EB%94%94%20%EC%BA%A1%EC%B3%90.png)
  - **사용언어** : Python 3.9.13
  - **사용툴** : VS Code 1.74.1, Google Colab
  - **데이터베이스** : SQLite
@@ -24,7 +24,7 @@
 
  - 자세한 내용은 아래 링크를 참조해주세요
     - PDF : [구글 드라이브 링크 이동](https://drive.google.com/file/d/15ciaGD5oJnnCVCYpRenE_-BtkYW9Vktp/view?usp=share_link)
-    - 시연영상 : https://youtu.be/RbN39pUA1Ww
+    - 시연영상 : https://youtu.be/j3rdthS7PM8
 
 ## 데모 시연
 - 먼저 프로젝트 파일을 다운로드 받습니다. 
